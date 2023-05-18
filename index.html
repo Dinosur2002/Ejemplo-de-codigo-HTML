@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Título de la página</title>
+	<link rel="stylesheet" href="stilo.css">
+	<link rel="stylesheet" href="estil.css">
+	<!-- Incluye el archivo CSS de highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+	<!-- Incluye jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Incluye el archivo JavaScript de highlight.js -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+	<!-- Inicializa el resaltado de sintaxis de highlight.js -->
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- <style>
+		body {
+			animation: cambio-fondo 1s infinite;
+			background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+		}
+
+		@keyframes cambio-fondo {
+			0% {
+				background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+			}
+			100% {
+				background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+			}
+		}
+	</style> -->
+</head>
+
+<body>
+	<section id="ejemplos">
+		<h1>Ejemplos de código HTML, CSS y JavaScript</h1>
+		<p>A continuación se muestran algunos ejemplos de cómo utilizar estos lenguajes:</p>
+
+		<!-- Botones de filtro -->
+		<div>
+			<button class="filtro" data-target="todos">Todos</button>
+			<button class="filtro" data-target="html">HTML</button>
+			<button class="filtro" data-target="css">CSS</button>
+			<button class="filtro" data-target="js">JavaScript</button>
+		</div>
+
+		<!-- Aquí puedo ir agregando los diferentes ejemplos de código -->
+		<section id="ejemplos">
+			<h1>Ejemplos de código HTML, CSS y JavaScript</h1>
+			<p>A continuación se muestran algunos ejemplos de cómo utilizar estos lenguajes:</p>
+
+			<div class="codigo html">
+				<h2>Ejemplo de código HTML:</h2>
+				<pre><code class="html">&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Título de la página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hola Mundo!&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+
+				<h2>Ejemplo de código HTML con imágenes:</h2>
+				<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Mi sitio web&lt;/h1&gt;
+	&lt;img src="mi-imagen.jpg" alt="Descripción de la imagen"&gt;
+	&lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			</div>
+			<div class="codigo css">
+				<h2>Ejemplo de código CSS:</h2>
+				<pre><code class="css">h1 { 
+     color: red; 
+     font-size: 2em; 
+            }</code></pre>
+
+				<h2>Ejemplo de código CSS con animaciones:</h2>
+				<pre><code class="css">div {
+	background-color: #c7254e;
+	color: #fff;
+	padding: 1em;
+	animation: ejemplo 2s infinite alternate;
+}
+
+@keyframes ejemplo {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(50px);
+	}
+}</code></pre>
+			</div>
+			<div class="codigo js">
+				<h2>Ejemplo de código JavaScript:</h2>
+				<pre><code class="javascript">function saludar(nombre) {
+		            console.log(`Hola ${nombre}!`);
+		        }			        
+		        saludar('Juan');</code></pre>
+
+				<h2>Ejemplo de código JavaScript para validar un formulario:</h2>
+				<pre><code class="javascript">&lt;form id="mi-formulario"&gt;
+	&lt;input type="text" name="nombre" placeholder="Nombre"&gt;
+	&lt;input type="email" name="email" placeholder="Correo electrónico"&gt;
+	&lt;textarea name="mensaje" placeholder="Mensaje"&gt;&lt;/textarea&gt;
+	&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+		&lt;/form&gt;
+			
+		&lt;script&gt;
+		const formulario = document.getElementById('mi-formulario');
+			
+		formulario.addEventListener('submit', function(evento) {
+		evento.preventDefault();
+			
+		const nombre = formulario.elements.nombre.value.trim();
+		const email = formulario.elements.email.value.trim();
+		const mensaje = formulario.elements.mensaje.value.trim();
+			
+		if (nombre === '' || email === '' || mensaje === '') {
+		alert('Por favor completa todos los campos.');
+			return;
+		}
+			
+		alert('Formulario enviado!');
+	});
+	&lt;/script&gt;</code></pre>
+			</div>
+		</section>
+
+	</section>
+
+</body>
+
+</html>
