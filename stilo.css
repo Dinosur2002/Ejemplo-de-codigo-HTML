@@ -1,0 +1,23 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f7f7f7;
+}
+
+section#ejemplos {
+	margin: 2em auto;
+	max-width: 800px;
+	padding: 2em;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+pre {
+	background-color: #f7f7f7;
+	padding: 1em;
+	overflow-x: auto;
+}
+
+code {
+	font-family: monospace;
+	color: #c7254e;
+}
